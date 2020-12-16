@@ -4,7 +4,7 @@
 	"description": "Web REST API for Recruitment Bot",
 	"main": "app.js",
 	"scripts": {
-		"start": "nodemon app.js",
+		"start": "node app.js",
 		"dev": "nodemon app"
 	},
 	"author": "Dixon J",
@@ -19,5 +19,8 @@
 	},
 	"devDependencies": {
 		"nodemon": "^2.0.6"
+	},
+	"engines": {
+		"node": ">=10.0.0"
 	}
 }
