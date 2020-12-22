@@ -5,6 +5,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const jobRouter = require("./routes/api/job");
 const departmentRouter = require("./routes/api/department");
+const postingTitle = require("./routes/api/postingTitle");
 const app = express();
 
 require("dotenv").config();
@@ -41,5 +42,6 @@ app.use("/api/chats", require("./routes/api/chats"));
 app.use("/api/screening", require("./routes/api/screening"));
 app.use("/api/job", jobRouter);
 app.use("/api/department", departmentRouter);
+app.use("/api/postingTitle", postingTitle);
 
 app.listen(PORT, () => console.log(`Server Started on port ${PORT}`));
