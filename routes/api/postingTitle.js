@@ -13,8 +13,8 @@ const {
 router.route("/").get(getPostingTitles).post(createPostingTitle);
 router
 	.route("/:id")
-	.get(updatePostingTitle)
-	.patch(getOnePostingTitle)
+	.get(getOnePostingTitle)
+	.patch(updatePostingTitle)
 	.delete(deletePostingTitle);
 
 module.exports = router;
