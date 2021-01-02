@@ -48,7 +48,10 @@ const jobSchema = new mongoose.Schema({
 	city: {
 		type: String,
 		required: [true, "City Is Required"]
-	}
+	},
+	screeningQuestion: [
+		{ type: mongoose.Schema.ObjectId, ref: "ScreeningQuestion" }
+	]
 });
 
 const Job = mongoose.model("Job", jobSchema);
