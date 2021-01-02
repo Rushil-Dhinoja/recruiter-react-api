@@ -21,7 +21,7 @@ exports.getJobs = async (req, res) => {
 
 exports.getOneJob = async (req, res) => {
 	try {
-		const job = await Job.findById(req.params.id);
+		const job = await Job.findById(req.params.id).populate("screeningQuestion");
 
 		res.status(200).json({
 			status: "success",
