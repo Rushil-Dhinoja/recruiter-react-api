@@ -22,6 +22,10 @@ const screeningQuestionSchema = new mongoose.Schema({
 	questionCategory: {
 		type: String,
 		required: [true, "Question Category is required"]
+	},
+	checked: {
+		type: Boolean,
+		default: true
 	}
 });
 
