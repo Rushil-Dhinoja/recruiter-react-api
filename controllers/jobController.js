@@ -41,12 +41,15 @@ exports.getOneJob = async (req, res) => {
 
 exports.createJob = async (req, res) => {
 	try {
-		const job = await Job.create(req.body).populate("screeningQuestion");
+		const job = await Job.create(req.body);
+		const jobPopulated = await Job.findById(job._id).populate(
+			"screeningQuestion"
+		);
 
 		res.status(201).json({
 			status: "success",
 			data: {
-				data: job
+				data: jobPopulated
 			}
 		});
 	} catch (error) {
