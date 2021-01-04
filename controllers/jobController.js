@@ -41,7 +41,7 @@ exports.getOneJob = async (req, res) => {
 
 exports.createJob = async (req, res) => {
 	try {
-		const job = await Job.create(req.body);
+		const job = await Job.create(req.body).populate("screeningQuestion");
 
 		res.status(201).json({
 			status: "success",
