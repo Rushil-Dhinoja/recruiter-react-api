@@ -69,6 +69,10 @@ exports.updateJob = async (req, res) => {
 			runValidators: true
 		});
 
+		const jobPopulated = await Job.findById(job._id).populate(
+			"screeningQuestion"
+		);
+
 		res.status(200).json({
 			status: "Success",
 			data: {
