@@ -8,8 +8,9 @@ const jobSchema = new mongoose.Schema({
 		required: [true, "Job opening status is required"]
 	},
 	postingTitle: {
-		type: String,
-		required: [true, "Posting Title is required"]
+		type: mongoose.Schema.ObjectId,
+		required: [true, "Posting Title is required"],
+		ref: "PostingTitle"
 	},
 	department: {
 		type: String,

@@ -3,7 +3,9 @@ const Job = require("../models/jobModel");
 
 exports.getJobs = async (req, res) => {
 	try {
-		const jobs = await Job.find().populate("screeningQuestion");
+		const jobs = await Job.find()
+			.populate("screeningQuestion")
+			.populate("postingTitle");
 
 		res.status(200).json({
 			status: "success",
@@ -21,7 +23,9 @@ exports.getJobs = async (req, res) => {
 
 exports.getOneJob = async (req, res) => {
 	try {
-		const job = await Job.findById(req.params.id).populate("screeningQuestion");
+		const job = await Job.findById(req.params.id)
+			.populate("screeningQuestion")
+			.populate("postingTitle");
 
 		res.status(200).json({
 			status: "success",
@@ -42,9 +46,9 @@ exports.getOneJob = async (req, res) => {
 exports.createJob = async (req, res) => {
 	try {
 		const job = await Job.create(req.body);
-		const jobPopulated = await Job.findById(job._id).populate(
-			"screeningQuestion"
-		);
+		const jobPopulated = await Job.findById(job._id)
+			.populate("screeningQuestion")
+			.populate("postingTitle");
 
 		res.status(201).json({
 			status: "success",
@@ -69,9 +73,9 @@ exports.updateJob = async (req, res) => {
 			runValidators: true
 		});
 
-		const jobPopulated = await Job.findById(job._id).populate(
-			"screeningQuestion"
-		);
+		const jobPopulated = await Job.findById(job._id)
+			.populate("screeningQuestion")
+			.populate("postingTitle");
 
 		res.status(200).json({
 			status: "Success",
