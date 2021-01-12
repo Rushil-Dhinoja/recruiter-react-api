@@ -128,7 +128,21 @@ router.post("/", (req, res) => {
 //add multiple candidiate
 router.post("/multiple", async (req, res) => {
 	try {
-	} catch (error) {}
+		const candidates = await Candidate.insertMany(req.body);
+		res.status(201).json({
+			status: "Success",
+			data: {
+				data: candidates
+			}
+		});
+	} catch (error) {
+		res.status(400).json({
+			status: "Failed",
+			error: {
+				message: error.message
+			}
+		});
+	}
 });
 
 //get a candidate
