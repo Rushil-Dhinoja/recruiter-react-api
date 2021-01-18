@@ -21,7 +21,7 @@ exports.createChat = async (req, res) => {
 			);
 			res.status(201).json({
 				status: "Updated",
-				message: updatedMessage
+				data: { data: updatedMessage }
 			});
 		} else {
 			const docBody = {
