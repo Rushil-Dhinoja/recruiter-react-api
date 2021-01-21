@@ -53,11 +53,10 @@ router.get("/", (req, res) => {
 });
 
 // Get Candidates based on job id
-
 router.get("/job/:postingTitle", async (req, res) => {
 	try {
 		const candidates = await Candidate.find({
-			postingTitle: req.params.postingTitle
+			jobId: req.params.postingTitle
 		});
 		res.status(200).json({
 			status: "Success",

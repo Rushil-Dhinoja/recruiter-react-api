@@ -32,7 +32,7 @@ const candidateSchema = mongoose.Schema({
 		default: () => Math.floor(Math.random() * 100 + 1)
 	},
 	notes: String,
-	postingTitle: {
+	jobId: {
 		type: mongoose.Schema.ObjectId,
 		ref: "PostingTitle",
 		required: [true, "Job Id is required"]
