@@ -70,6 +70,24 @@ router.get("/job/:postingTitle", async (req, res) => {
 	}
 });
 
+router.get("/unassigned", async (req, res) => {
+	try {
+		const candidates = await Candidate.find({
+			jobId: { $exists: false }
+		});
+
+		res.status(200).json({
+			status: "Success",
+			result: candidates.length,
+			data: { data: candidates }
+		});
+	} catch (error) {
+		res.status(404).json({
+			status: "Failed"
+		});
+	}
+});
+
 //Add a Candidate
 router.post("/", (req, res) => {
 	if (req.body.jobId) {
