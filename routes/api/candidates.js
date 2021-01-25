@@ -99,7 +99,7 @@ router.get("/action/:action", async (req, res) => {
 		) {
 			const candidates = await Candidate.find({
 				action: req.params.action
-			});
+			}).populate("departmentId", "jobId");
 
 			res.status(200).json({
 				status: "Success",
