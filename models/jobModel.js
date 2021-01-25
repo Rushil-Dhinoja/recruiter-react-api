@@ -50,6 +50,14 @@ const jobSchema = new mongoose.Schema({
 		type: String,
 		required: [true, "City Is Required"]
 	},
+	panel: {
+		type: String,
+		required: [true, "panel is required"]
+	},
+	hiringManager: {
+		type: String,
+		required: [true, "Hiring Manager is Required"]
+	},
 	screeningQuestion: [
 		{ type: mongoose.Schema.ObjectId, ref: "ScreeningQuestion" }
 	]
