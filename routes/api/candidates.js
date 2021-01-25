@@ -95,7 +95,8 @@ router.get("/action/:action", async (req, res) => {
 			req.params.action === "Disqualify" ||
 			req.params.action === "Shortlist" ||
 			req.params.action === "Assess Further" ||
-			req.params.action === "Future Reference"
+			req.params.action === "Future Reference" ||
+			req.params.action === "Schedule Later"
 		) {
 			const candidates = await Candidate.find({
 				action: req.params.action
