@@ -88,6 +88,38 @@ router.get("/unassigned", async (req, res) => {
 	}
 });
 
+router.get("/action/:action", async (req, res) => {
+	try {
+		if (
+			req.params.action === "Schedule" ||
+			req.params.action === "Disqualify" ||
+			req.params.action === "Shortlist" ||
+			req.params.action === "Assess Further" ||
+			req.params.action === "Future Reference"
+		) {
+			const candidates = await Candidate.find({
+				action: req.params.action
+			});
+
+			res.status(200).json({
+				status: "Success",
+				result: candidates.length,
+				data: { data: candidates }
+			});
+		} else {
+			res.status(400).json({
+				status: "Failed",
+				msg:
+					"Please send a valid action which is [Schedule, Disqualify, Shortlist, Assess Further, Future Reference]"
+			});
+		}
+	} catch (error) {
+		res.status(404).json({
+			status: "Failed"
+		});
+	}
+});
+
 //Add a Candidate
 router.post("/", (req, res) => {
 	if (req.body.jobId) {
