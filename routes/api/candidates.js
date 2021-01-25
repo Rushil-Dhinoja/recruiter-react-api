@@ -200,6 +200,8 @@ router.get("/:candidateId", (req, res) => {
 	const id = req.params.candidateId;
 	Candidate.findById(id)
 		.select("-__v")
+		.populate("departmentId")
+		.populate("postingTitle")
 		.exec()
 		.then(data => {
 			if (data) {
