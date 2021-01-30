@@ -28,13 +28,22 @@ const jobSchema = new mongoose.Schema({
 		type: String,
 		required: [true, "Responsibilities is required"]
 	},
-	workExp: {
+	minWorkExp: {
 		type: String,
-		required: [true, "Work Exp is required"]
+		required: [true, "Min Work Exp is required"]
 	},
-	salaryRange: {
+	maxWorkExp: {
 		type: String,
-		required: [true, "Salary Range is required"]
+		required: [true, "Max Work Exp is required"]
+	},
+
+	minSalary: {
+		type: String,
+		required: [true, " Min Salary is required"]
+	},
+	maxSalary: {
+		type: String,
+		required: [true, "Max Salary is required"]
 	},
 	country: {
 		type: String,
