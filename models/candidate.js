@@ -34,7 +34,7 @@ const candidateSchema = mongoose.Schema({
 	notes: String,
 	jobId: {
 		type: mongoose.Schema.ObjectId,
-		ref: "PostingTitle",
+		ref: "Job",
 		required: [true, "Job Id is required"]
 	},
 	departmentId: {
