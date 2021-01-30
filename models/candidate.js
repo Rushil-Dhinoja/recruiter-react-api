@@ -38,9 +38,7 @@ const candidateSchema = mongoose.Schema({
 		required: [true, "Job Id is required"]
 	},
 	departmentId: {
-		type: mongoose.Schema.ObjectId,
-		ref: "Department",
-		required: [true, "Department Id is required"]
+		type: String
 	},
 	date: String,
 	time: String,
