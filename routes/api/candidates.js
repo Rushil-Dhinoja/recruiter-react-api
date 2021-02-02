@@ -241,68 +241,68 @@ router.patch("/:candidateId", upload.single("resume"), (req, res) => {
 		req.body.resume = req.file.path;
 	}
 	const id = req.params.candidateId;
-	if (req.body.jobId) {
-		Vacancy.find({ _id: { $in: req.body.jobId } })
-			.exec()
-			.then(result => {
-				// check if the jobids in the patch request exists
-				if (result.length !== req.body.jobId.length) {
-					res.status(500).json({ message: "Invalid JobIds" });
-				} else {
-					Candidate.findById(id)
-						.exec()
-						.then(results => {
-							//find candidate in the request
-							const removedJobId = [];
-							const newJobId = [];
-							results.jobId.forEach(jobId => {
-								// find the jobIds which were removed
-								if (!req.body.jobId.includes(jobId.toString())) {
-									removedJobId.push(jobId);
-								}
-							});
-							req.body.jobId.forEach(jobId => {
-								// find the new jobIds which were added
-								if (!results.jobId.includes(jobId)) {
-									newJobId.push(jobId);
-								}
-							});
-							Vacancy.updateMany(
-								{ _id: { $in: newJobId } },
-								{ $inc: { applicationReceived: 1 } }
-							).exec(); // inc/decrement the applicationrecieved
-							Vacancy.updateMany(
-								{ _id: { $in: removedJobId } },
-								{ $inc: { applicationReceived: -1 } }
-							).exec();
+	// if (req.body.jobId) {
+	// 	Vacancy.find({ _id: { $in: req.body.jobId } })
+	// 		.exec()
+	// 		.then(result => {
+	// 			// check if the jobids in the patch request exists
+	// 			if (result.length !== req.body.jobId.length) {
+	// 				res.status(500).json({ message: "Invalid JobIds" });
+	// 			} else {
+	// 				Candidate.findById(id)
+	// 					.exec()
+	// 					.then(results => {
+	// 						//find candidate in the request
+	// 						const removedJobId = [];
+	// 						const newJobId = [];
+	// 						results.jobId.forEach(jobId => {
+	// 							// find the jobIds which were removed
+	// 							if (!req.body.jobId.includes(jobId.toString())) {
+	// 								removedJobId.push(jobId);
+	// 							}
+	// 						});
+	// 						req.body.jobId.forEach(jobId => {
+	// 							// find the new jobIds which were added
+	// 							if (!results.jobId.includes(jobId)) {
+	// 								newJobId.push(jobId);
+	// 							}
+	// 						});
+	// 						Vacancy.updateMany(
+	// 							{ _id: { $in: newJobId } },
+	// 							{ $inc: { applicationReceived: 1 } }
+	// 						).exec(); // inc/decrement the applicationrecieved
+	// 						Vacancy.updateMany(
+	// 							{ _id: { $in: removedJobId } },
+	// 							{ $inc: { applicationReceived: -1 } }
+	// 						).exec();
 
-							Candidate.findByIdAndUpdate(id, req.body, { new: true })
-								.exec() //update the candidate
-								.then(result => {
-									res.status(201).json({ updatedCandidate: result });
-								})
-								.catch(err => {
-									res.status(500).json({ error: err });
-								});
-						})
-						.catch(err => {
-							res.status(500).json({ error: err });
-						});
-				}
-			})
-			.catch(err => {
-				res.status(500).json({ error: "Malformed Request" });
-			});
-	} else {
-		Candidate.findByIdAndUpdate(id, req.body, { new: true })
-			.exec() // in cases where jobids were not mentioned
-			.then(result => {
-				res.status(201).json({ updatedCandidate: result });
-			})
-			.catch(err => {
-				res.status(500).json({ error: err });
-			});
-	}
+	// 						Candidate.findByIdAndUpdate(id, req.body, { new: true })
+	// 							.exec() //update the candidate
+	// 							.then(result => {
+	// 								res.status(201).json({ updatedCandidate: result });
+	// 							})
+	// 							.catch(err => {
+	// 								res.status(500).json({ error: err });
+	// 							});
+	// 					})
+	// 					.catch(err => {
+	// 						res.status(500).json({ error: err });
+	// 					});
+	// 			}
+	// 		})
+	// 		.catch(err => {
+	// 			res.status(500).json({ error: "Malformed Request" });
+	// 		});
+	// } else {
+	Candidate.findByIdAndUpdate(id, req.body, { new: true })
+		.exec() // in cases where jobids were not mentioned
+		.then(result => {
+			res.status(201).json({ updatedCandidate: result });
+		})
+		.catch(err => {
+			res.status(500).json({ error: err });
+		});
+	// }
 });
 
 //delete a candidate
