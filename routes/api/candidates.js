@@ -39,9 +39,9 @@ router.get("/", (req, res) => {
 			req.query[key] = JSON.parse(req.query[key]);
 		} catch (SyntaxError) {}
 	});
+	console.log("api");
 	Candidate.find(req.query)
 		.select("-__v")
-		.populate("departmentId")
 		.populate("postingTitle")
 		.exec()
 		.then(data => {
@@ -100,9 +100,7 @@ router.get("/action/:action", async (req, res) => {
 		) {
 			const candidates = await Candidate.find({
 				action: req.params.action
-			})
-				.populate("departmentId")
-				.populate("jobId");
+			}).populate("jobId");
 
 			res.status(200).json({
 				status: "Success",
@@ -203,7 +201,6 @@ router.get("/:candidateId", (req, res) => {
 	const id = req.params.candidateId;
 	Candidate.findById(id)
 		.select("-__v")
-		.populate("departmentId")
 		.populate("postingTitle")
 		.exec()
 		.then(data => {
