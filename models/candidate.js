@@ -63,6 +63,9 @@ const candidateSchema = mongoose.Schema({
 	},
 	action: {
 		type: String
+	},
+	skills:{
+		type: String
 	}
 });
 
