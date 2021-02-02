@@ -1,5 +1,7 @@
 /** @format */
-
+const https = require("https");
+const fs = require("fs");
+const download = require("download");
 const express = require("express");
 const router = express.Router();
 const multer = require("multer");
@@ -213,6 +215,28 @@ router.get("/:candidateId", (req, res) => {
 		.catch(err => {
 			res.status(500).json({ error: "Malformed Request" });
 		});
+});
+
+router.patch("/cv/:uid", async (req, res) => {
+	try {
+		if (req.body.url) {
+			const data = await download(req.body.url);
+			res.json({
+				status: "Done",
+				data: data
+			});
+		} else {
+			res.json({
+				status: "Failed",
+				message: "Url is required in request body"
+			});
+		}
+	} catch (error) {
+		res.json({
+			status: "done",
+			error: error
+		});
+	}
 });
 
 //update a candidate
