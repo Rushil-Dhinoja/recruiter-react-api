@@ -125,56 +125,51 @@ router.get("/action/:action", async (req, res) => {
 
 //Add a Candidate
 router.post("/", (req, res) => {
-	if (req.body.jobId) {
-		const applyingVacancies = req.body.jobId;
-		const update = { $inc: { applicationReceived: 1 } };
-		Vacancy.find({ _id: { $in: applyingVacancies } })
-			.exec()
-			.then(result => {
-				if (result.length !== applyingVacancies.length) {
-					res.status(500).json({
-						message: "Invalid JobIds"
-					});
-				} else {
-					Vacancy.updateMany({ _id: { $in: applyingVacancies } }, update)
-						.exec()
-						.then(result => {
-							if (result.n === applyingVacancies.length) {
-								// req.body.uid = Math.floor(1000000 + Math.random() * 9000000)
-								const candidate = new Candidate(req.body);
-								candidate
-									.save()
-									.then(result => {
-										res.status(201).json({ createdCandidate: result });
-									})
-									.catch(err => {
-										res.status(500).json({ error: err.message });
-									});
-							} else {
-								res
-									.status(500)
-									.json({ error: "Update Failed, Invalid jobIds" });
-							}
-						})
-						.catch(err => {
-							res.status(500).json({ error: err });
-						});
-				}
-			})
-			.catch(err => {
-				res.status(500).json({ errror: err });
-			});
-	} else {
-		const candidate = new Candidate(req.body);
-		candidate
-			.save()
-			.then(result => {
-				res.status(201).json({ createdCandidate: result });
-			})
-			.catch(err => {
-				res.status(500).json({ error: err.message });
-			});
-	}
+	// if (req.body.jobId) {
+	// 	const applyingVacancies = req.body.jobId;
+	// 	const update = { $inc: { applicationReceived: 1 } };
+	// 	Vacancy.find({ _id: { $in: applyingVacancies } })
+	// 		.exec()
+	// 		.then(result => {
+
+	// 				Vacancy.updateMany({ _id: { $in: applyingVacancies } }, update)
+	// 					.exec()
+	// 					.then(result => {
+	// 						if (result.n === applyingVacancies.length) {
+	// 							// req.body.uid = Math.floor(1000000 + Math.random() * 9000000)
+	// 							const candidate = new Candidate(req.body);
+	// 							candidate
+	// 								.save()
+	// 								.then(result => {
+	// 									res.status(201).json({ createdCandidate: result });
+	// 								})
+	// 								.catch(err => {
+	// 									res.status(500).json({ error: err.message });
+	// 								});
+	// 						} else {
+	// 							res
+	// 								.status(500)
+	// 								.json({ error: "Update Failed, Invalid jobIds" });
+	// 						}
+	// 					})
+	// 					.catch(err => {
+	// 						res.status(500).json({ error: err });
+	// 					});
+	// 		})
+	// 		.catch(err => {
+	// 			res.status(500).json({ errror: err });
+	// 		});
+	// } else {
+	const candidate = new Candidate(req.body);
+	candidate
+		.save()
+		.then(result => {
+			res.status(201).json({ createdCandidate: result });
+		})
+		.catch(err => {
+			res.status(500).json({ error: err.message });
+		});
+	// }
 });
 
 //add multiple candidiate
