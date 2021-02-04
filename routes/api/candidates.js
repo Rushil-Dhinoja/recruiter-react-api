@@ -102,7 +102,7 @@ router.get("/action/:action", async (req, res) => {
 		) {
 			const candidates = await Candidate.find({
 				action: req.params.action
-			}).populate("jobId");
+			}).populate({ path: "jobId", populate: { path: "postingTitle" } });
 
 			res.status(200).json({
 				status: "Success",
