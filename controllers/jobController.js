@@ -10,7 +10,7 @@ exports.getJobs = async (req, res) => {
 
 		const newJobs = await Promise.all(
 			jobs.map(async job => {
-				const candidateCount = await candidate.find({ jobId: job._id });
+				const candidateCount = await Candidate.find({ jobId: job._id });
 				// console.log(candidateCount.length);
 				return { ...job._doc, candidateCount: candidateCount.length };
 			})
@@ -26,7 +26,8 @@ exports.getJobs = async (req, res) => {
 		});
 	} catch (error) {
 		res.status(404).json({
-			status: "Failed"
+			status: "Failed",
+			error: error
 		});
 	}
 };
