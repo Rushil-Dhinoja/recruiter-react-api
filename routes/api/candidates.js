@@ -307,36 +307,50 @@ router.patch("/:candidateId", upload.single("resume"), (req, res) => {
 
 //delete a candidate
 
-router.delete("/:candidateId", (req, res, next) => {
-	const id = req.params.candidateId;
-	const update = { $inc: { applicationReceived: -1 } };
-	Candidate.findById(id)
-		.exec()
-		.then(data => {
-			if (data) {
-				Vacancy.updateMany({ _id: { $in: data.jobId } }, update)
-					.exec() // decrement the application received attribute in vacancy
-					.then(result => {
-						if (result.n === data.jobId.length) {
-							Candidate.deleteOne({ _id: id })
-								.exec()
-								.then(result => {
-									res.status(200).json(result);
-								})
-								.catch(err => {
-									res.status(500).json({ error: err });
-								});
-						} else {
-							res.status(500).json({ error: "Update Failed, Invalid JobIds" });
-						}
-					})
-					.catch(err => {
-						res.status(500).json({ error: err });
-					});
-			} else {
-				res.status(404).json({ Message: id + " Not Found" });
+router.delete("/:candidateId", async (req, res, next) => {
+	try {
+		const id = req.params.candidateId;
+		await Candidate.findByIdAndDelete(id);
+		res.status(204).json({
+			status: "success",
+			data: null
+		});
+	} catch (error) {
+		res.status(400).json({
+			status: "Fail",
+			error: {
+				message: error.message
 			}
 		});
+	}
+	// const update = { $inc: { applicationReceived: -1 } };
+	// Candidate.findById(id)
+	// 	.exec()
+	// 	.then(data => {
+	// 		if (data) {
+	// 			Vacancy.updateMany({ _id: { $in: data.jobId } }, update)
+	// 				.exec() // decrement the application received attribute in vacancy
+	// 				.then(result => {
+	// 					if (result.n === data.jobId.length) {
+	// 						Candidate.deleteOne({ _id: id })
+	// 							.exec()
+	// 							.then(result => {
+	// 								res.status(200).json(result);
+	// 							})
+	// 							.catch(err => {
+	// 								res.status(500).json({ error: err });
+	// 							});
+	// 					} else {
+	// 						res.status(500).json({ error: "Update Failed, Invalid JobIds" });
+	// 					}
+	// 				})
+	// 				.catch(err => {
+	// 					res.status(500).json({ error: err });
+	// 				});
+	// 		} else {
+	// 			res.status(404).json({ Message: id + " Not Found" });
+	// 		}
+	// 	});
 });
 
 module.exports = router;
