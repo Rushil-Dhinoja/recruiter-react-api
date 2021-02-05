@@ -295,8 +295,9 @@ router.patch("/:candidateId", upload.single("resume"), (req, res) => {
 	// 		});
 	// } else {
 	Candidate.findByIdAndUpdate(id, req.body, { new: true })
+		.populate({ path: "jobId", populate: { path: "postingTitle" } })
 		.exec()
-		.populate({ path: "jobId", populate: { path: "postingTitle" } }) // in cases where jobids were not mentioned
+		// in cases where jobids were not mentioned
 		.then(result => {
 			res.status(201).json({ updatedCandidate: result });
 		})
