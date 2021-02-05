@@ -24,7 +24,7 @@ const jobSchema = new mongoose.Schema(
 		assingedRecruiterEmail: {
 			type: String,
 			required: [true, "Assigned Recruiter Email is required"]
-		}
+		},
 		jobType: {
 			type: String,
 			required: [true, "Job Type is required"]
