@@ -13,6 +13,10 @@ const jobSchema = new mongoose.Schema(
 			required: [true, "Posting Title is required"],
 			ref: "PostingTitle"
 		},
+		postingTitleName: {
+			type: String,
+			required: [true, "Posting Title Name is required"]
+		},
 		department: {
 			type: String,
 			required: [true, "Department is required"]
