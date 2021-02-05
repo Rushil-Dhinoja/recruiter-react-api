@@ -70,6 +70,10 @@ const candidateSchema = mongoose.Schema({
 	response: {
 		type: [responseSchema],
 		required: true
+	},
+	postingTitle: {
+		type: String,
+		required: true
 	}
 });
 
