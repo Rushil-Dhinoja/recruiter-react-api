@@ -21,6 +21,10 @@ const jobSchema = new mongoose.Schema(
 			type: String,
 			required: [true, "Assigned Recruiter is required"]
 		},
+		assingedRecruiterEmail: {
+			type: String,
+			required: [true, "Assigned Recruiter Email is required"]
+		}
 		jobType: {
 			type: String,
 			required: [true, "Job Type is required"]
@@ -67,6 +71,10 @@ const jobSchema = new mongoose.Schema(
 		hiringManager: {
 			type: String,
 			required: [true, "Hiring Manager is Required"]
+		},
+		hiringManagerEmail: {
+			type: String,
+			required: [true, "Hiring Manager Email is required"]
 		},
 		screeningQuestion: [
 			{ type: mongoose.Schema.ObjectId, ref: "ScreeningQuestion" }
