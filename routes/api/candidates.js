@@ -46,7 +46,7 @@ router.get("/", (req, res) => {
 	console.log("api");
 	Candidate.find(req.query)
 		.select("-__v")
-		.populate("postingTitle")
+		.populate("jobId")
 		.exec()
 		.then(data => {
 			res.status(200).json(data);
@@ -200,7 +200,7 @@ router.get("/:candidateId", (req, res) => {
 	const id = req.params.candidateId;
 	Candidate.findById(id)
 		.select("-__v")
-		.populate("postingTitle")
+		.populate("jobId")
 		.exec()
 		.then(data => {
 			if (data) {
