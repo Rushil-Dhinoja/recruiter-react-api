@@ -14,10 +14,9 @@ const {
 } = require("../../controllers/screeningQuestionController");
 
 router.route("/").get(getScreeningQuestion).post(createScreeningQuestion);
-router
-	.route("/:department")
-	.get(getScreeningQuestionsByDepartment)
-	.delete(deleteScreeningQuestion);
+router.route("/:department").get(getScreeningQuestionsByDepartment);
+
+router.route("/:id").delete(deleteScreeningQuestion);
 
 router
 	.route("/department/:department")
