@@ -196,6 +196,26 @@ router.post("/multiple", async (req, res) => {
 
 //get a candidate
 
+router.get("/not-visible", async (req, res ) => {
+	try {
+		const candidates = await Candidate.find({visible: false})
+		res.status(201).json({
+			status: "Success",
+			data:{
+				data: candidates
+			}
+		})
+	} catch (error) {
+		res.status(400).json({
+			status: "Failed",
+			error: {
+				message: error.message
+			}
+		})
+		
+	}
+})
+
 router.get("/:candidateId", (req, res) => {
 	const id = req.params.candidateId;
 	Candidate.findById(id)
