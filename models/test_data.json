@@ -1,0 +1,831 @@
+{
+	"ResumeParserData": {
+		"ResumeFileName": "1613732090925-Sahil_Madaan_Sales_Resume.pdf",
+		"ResumeLanguage": { "Language": "English", "LanguageCode": "en" },
+		"ParsingDate": "19/02/2021 10:54:56",
+		"ResumeCountry": {
+			"Country": "India",
+			"Evidence": "Phone",
+			"CountryCode": { "IsoAlpha2": "IN", "IsoAlpha3": "IND", "UNCode": "356" }
+		},
+		"Name": {
+			"FullName": "Sahil Madaan",
+			"TitleName": "",
+			"FirstName": "Sahil",
+			"MiddleName": "",
+			"LastName": "Madaan",
+			"FormattedName": "Sahil Madaan",
+			"ConfidenceScore": 10
+		},
+		"DateOfBirth": "",
+		"Gender": "",
+		"FatherName": "",
+		"MotherName": "",
+		"MaritalStatus": "",
+		"Nationality": "",
+		"LanguageKnown": [{ "Language": "", "LanguageCode": "" }],
+		"UniqueID": "",
+		"LicenseNo": "",
+		"PassportDetail": {
+			"PassportNumber": "",
+			"DateOfExpiry": "",
+			"DateOfIssue": "",
+			"PlaceOfIssue": ""
+		},
+		"PanNo": "",
+		"VisaStatus": "",
+		"Email": [
+			{ "EmailAddress": "sahilmadaan12@gmail.com", "ConfidenceScore": 10 }
+		],
+		"PhoneNumber": [
+			{
+				"Number": "+91-8696907004",
+				"ISDCode": "+91",
+				"OriginalNumber": "86969 07004",
+				"FormattedNumber": "+91 86969 07004",
+				"Type": "Phone",
+				"ConfidenceScore": 10
+			}
+		],
+		"WebSite": [
+			{
+				"Type": "Linkedin",
+				"Url": "https://www.linkedin.com/in/sahilmadaan12/"
+			}
+		],
+		"Address": [
+			{
+				"Street": "",
+				"City": "",
+				"State": "",
+				"StateIsoCode": "",
+				"Country": "",
+				"CountryCode": { "IsoAlpha2": "", "IsoAlpha3": "", "UNCode": "" },
+				"ZipCode": "",
+				"FormattedAddress": "",
+				"Type": "",
+				"ConfidenceScore": 0
+			}
+		],
+		"Category": "Management of Companies and Enterprises",
+		"SubCategory": "Chief Executives",
+		"CurrentSalary": {
+			"Amount": "",
+			"Symbol": "",
+			"Currency": "",
+			"Unit": "",
+			"Text": ""
+		},
+		"ExpectedSalary": {
+			"Amount": "",
+			"Symbol": "",
+			"Currency": "",
+			"Unit": "",
+			"Text": ""
+		},
+		"Qualification": "International Program in Management for Executives (1year full time MBA) 2019-20 \r \t  Indian Institute of Management Lucknow, India CGPA 2.99/4 \r \t\t  B. Tech, Mechanical Engineering \t 2008-12 \r \t  Indian Institute of Technology (IIT) , Patna, CGPA 7.22/10 \r \t\t  All India Rank 3528 (99.98 percentile) out of 5 Lakhs candidates in IIT-JEE 2008",
+		"SegregatedQualification": [
+			{
+				"Institution": {
+					"Name": "Indian Institute of Management Lucknow",
+					"Type": "Institute",
+					"Location": {
+						"City": "",
+						"State": "",
+						"StateIsoCode": "",
+						"Country": "India",
+						"CountryCode": {
+							"IsoAlpha2": "IN",
+							"IsoAlpha3": "IND",
+							"UNCode": "356"
+						}
+					},
+					"ConfidenceScore": 6
+				},
+				"Degree": {
+					"DegreeName": "Management for Executives",
+					"NormalizeDegree": "",
+					"Specialization": ["Management", "Executives"],
+					"ConfidenceScore": 5
+				},
+				"FormattedDegreePeriod": "2019 to 2020",
+				"StartDate": "01/01/2019",
+				"EndDate": "31/12/2020",
+				"Aggregate": { "Value": "2.99", "MeasureType": "CGPA" }
+			},
+			{
+				"Institution": {
+					"Name": "Indian Institute of Technology IIT",
+					"Type": "Institute",
+					"Location": {
+						"City": "Patna",
+						"State": "",
+						"StateIsoCode": "",
+						"Country": "",
+						"CountryCode": { "IsoAlpha2": "", "IsoAlpha3": "", "UNCode": "" }
+					},
+					"ConfidenceScore": 7
+				},
+				"Degree": {
+					"DegreeName": "B. Tech Mechanical Engineering",
+					"NormalizeDegree": "Bachelor of Technology",
+					"Specialization": ["Mechanical Engineering"],
+					"ConfidenceScore": 6
+				},
+				"FormattedDegreePeriod": "2008 to 2012",
+				"StartDate": "01/01/2008",
+				"EndDate": "31/12/2012",
+				"Aggregate": { "Value": "7.22", "MeasureType": "CGPA" }
+			},
+			{
+				"Institution": {
+					"Name": "IIT",
+					"Type": "Institute",
+					"Location": {
+						"City": "",
+						"State": "",
+						"StateIsoCode": "",
+						"Country": "India",
+						"CountryCode": {
+							"IsoAlpha2": "IN",
+							"IsoAlpha3": "IND",
+							"UNCode": "356"
+						}
+					},
+					"ConfidenceScore": 10
+				},
+				"Degree": {
+					"DegreeName": "",
+					"NormalizeDegree": "",
+					"Specialization": [],
+					"ConfidenceScore": 0
+				},
+				"FormattedDegreePeriod": "2008",
+				"StartDate": "",
+				"EndDate": "31/12/2008",
+				"Aggregate": { "Value": "99.98", "MeasureType": "Percentage" }
+			}
+		],
+		"Certification": "\r\rSupply Chain Analytics by MIT; Marketing Analytics by UC Berkeley \r \t\t  Hands on experience of using Python, Tableau, R, SQL, Google Analytics, Advance Excel & PowerPoint\r",
+		"SegregatedCertification": [],
+		"SkillBlock": "",
+		"SkillKeywords": "Loyalty,Initiative,Scheduling,Analysing,Organized,Analysis,Strategy,CRM,Sales and Distribution,Business Development,Business Analytics,Customer Retention,Sentiment Analysis,Cross-Functional,Google Analytics,Market Share,Social Media,Supply Chain,Data Driven,Google APIs,Analytics,Ecommerce,Follow Up,Marketing,Screening,Linkedin,Pipeline,MongoDB,Revenue,SAP CRM,Tableau,Docker,Retail,Server,CAPEX,Rally,Sales,REST,B2B,B2C,GTM,SAP",
+		"SegregatedSkill": [
+			{
+				"Type": "BehaviorSkills",
+				"Skill": "Loyalty",
+				"Ontology": "Management of Companies and Enterprises>Management Occupations>Loyalty",
+				"Alias": "loyal",
+				"FormattedName": "Loyalty",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "31/12/2017",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "SoftSkill",
+				"Skill": "Initiative",
+				"Ontology": "Management of Companies and Enterprises>Management Occupations>Initiative",
+				"Alias": "",
+				"FormattedName": "Initiative",
+				"Evidence": "Others",
+				"LastUsed": "",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "SoftSkill",
+				"Skill": "Scheduling",
+				"Ontology": "Administrative and Support and Waste Management and Remediation Services>Production, Planning, and Expediting Clerks>Scheduling Process",
+				"Alias": "developing schedules, development schedule, Scheduling",
+				"FormattedName": "Scheduling Process",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "19/02/2021",
+				"ExperienceInMonths": 9
+			},
+			{
+				"Type": "SoftSkill",
+				"Skill": "Analysing",
+				"Ontology": "Management of Companies and Enterprises>Management Occupations>Analysis",
+				"Alias": "analysing",
+				"FormattedName": "Analysis",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "31/12/2017",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "SoftSkill",
+				"Skill": "Organized",
+				"Ontology": "Management of Companies and Enterprises>Management Occupations>Organized",
+				"Alias": "Organise, Organizing",
+				"FormattedName": "Organized",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "31/03/2017",
+				"ExperienceInMonths": 24
+			},
+			{
+				"Type": "SoftSkill",
+				"Skill": "Analysis",
+				"Ontology": "Management of Companies and Enterprises>Management Occupations>Analysis",
+				"Alias": "analysing",
+				"FormattedName": "Analysis",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "19/02/2021",
+				"ExperienceInMonths": 9
+			},
+			{
+				"Type": "SoftSkill",
+				"Skill": "Strategy",
+				"Ontology": "Management of Companies and Enterprises>Management Occupations>Strategy",
+				"Alias": "Launch Strategies",
+				"FormattedName": "Strategy",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "31/12/2017",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "SoftSkill",
+				"Skill": "CRM",
+				"Ontology": "Management of Companies and Enterprises>Marketing and Sales Managers>SAP CRM",
+				"Alias": "Sap - Crm, sap crm 5.0, sap crm 7.0, Sap Crm Technical, Sap Customer Relationship Management, SAP Digital CRM, sap portal 6.0, sap-crm, SAPCRM",
+				"FormattedName": "SAP CRM",
+				"Evidence": "Others",
+				"LastUsed": "",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Sales and Distribution",
+				"Ontology": "Finance and Insurance>Market Research Analysts and Marketing Specialists>Distribution",
+				"Alias": "",
+				"FormattedName": "Distribution",
+				"Evidence": "Others",
+				"LastUsed": "",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Business Development",
+				"Ontology": "Other Services (except Public Administration) >Business Associations>Business Development",
+				"Alias": "biz development, Building New Business, Business Development Management, business development support, business developments, business line development, Business Management Development, business sales development, business solution development, Business-Development, commercial business development, Company Development, Corporate Development, Develop Business, develop business components, develop business solution, develop new business, developing business, general business development, Generate New Business, it business development, New Business Development, strategic business development",
+				"FormattedName": "Business Development",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "31/12/2017",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Business Analytics",
+				"Ontology": "Other Services (except Public Administration) >Business Associations>Business Analytics",
+				"Alias": "Business Management Analytics, Business-Analytics",
+				"FormattedName": "Business Analytics",
+				"Evidence": "Others",
+				"LastUsed": "",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Customer Retention",
+				"Ontology": "Finance and Insurance>Business and Financial Operations Occupations >Customer Retention",
+				"Alias": "Account Retention, Client Retention, Client Retention Programs, Client-Retention, customer retentions, Customer-Retention, increase customer retention, retaining customers, retention programs, Sales Retention",
+				"FormattedName": "Customer Retention",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "31/12/2017",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Sentiment Analysis",
+				"Ontology": "Arts, Entertainment, and Recreation>Media and Communication Workers>Sentiment Analysis",
+				"Alias": "analyzing emotions, Sentiment-Analysis",
+				"FormattedName": "Sentiment Analysis",
+				"Evidence": "Others",
+				"LastUsed": "",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Cross-Functional",
+				"Ontology": "Finance and Insurance>Human Resources Specialists>Cross Functional",
+				"Alias": "cross-functional",
+				"FormattedName": "Cross Functional",
+				"Evidence": "Others",
+				"LastUsed": "",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Google Analytics",
+				"Ontology": "Management of Companies and Enterprises>Marketing and Sales Managers>Google Analytics",
+				"Alias": "Google Analytics API, Google Analytics Git, Google Analytics Reporting, Google Analytics soft, Google Analytics software, Google-Analytics",
+				"FormattedName": "Google Analytics",
+				"Evidence": "Others",
+				"LastUsed": "",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Market Share",
+				"Ontology": "Finance and Insurance>Market Research Analysts and Marketing Specialists>Market Share",
+				"Alias": "market share development, Market-Share",
+				"FormattedName": "Market Share",
+				"Evidence": "Others",
+				"LastUsed": "",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Social Media",
+				"Ontology": "Arts, Entertainment, and Recreation>Media and Communication Workers, All Other>Social Media",
+				"Alias": "social channels, social media skills, Social-Media",
+				"FormattedName": "Social Media",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "31/12/2017",
+				"ExperienceInMonths": 9
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Supply Chain",
+				"Ontology": "Management of Companies and Enterprises>Purchasing Managers>Supply Chain Management",
+				"Alias": "chain management, manage a supply chain, manage process chains, Manage the supply chain operations, managed supply chain, management of a supply chain, scm, supplier control, supply chain, Supply Chain Accounting, supply chain administration, Supply Chain Analytics, Supply Chain and Logistics, Supply Chain Assessment, SUPPLY CHAIN CUSTOMIZATION, Supply Chain Diagnosis, supply chain improvement, Supply Chain Management Service, supply chain managing, Supply Chain Manufacturing, Supply Chain Mgmt, supply chain mgmt., Supply Chain Optimization, Supply Chain Outsourcing, supply chain oversight, Supply Chain Reporting, supply chain supervision, supply operations, supply purchasing, Supply-chain management, supplychain management",
+				"FormattedName": "Supply Chain Management",
+				"Evidence": "Others",
+				"LastUsed": "",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Data Driven",
+				"Ontology": "Information>Data Processing, Hosting, and Related Services>Data Driven",
+				"Alias": "Data-Driven",
+				"FormattedName": "Data Driven",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "31/12/2017",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Google APIs",
+				"Ontology": "Information>Software Developers, Applications>Google API",
+				"Alias": "Google API Integration, Google API Open Source, Google APIs, Google application programming interface, Google application programming interfaces, googlemaps api",
+				"FormattedName": "Google API",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "19/02/2021",
+				"ExperienceInMonths": 9
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Analytics",
+				"Ontology": "Information>All Other Information Services>Analytics",
+				"Alias": "",
+				"FormattedName": "Analytics",
+				"Evidence": "Others",
+				"LastUsed": "",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Ecommerce",
+				"Ontology": "Wholesale Trade>Supervisors of Sales and retail sales Workers>E-commerce",
+				"Alias": "e - Commerce, E commerce, e-comm, e-commerce management, ECommerce, ecommerce management, ecommerce operations, ecommerce retail, ecommerce solution, Electronic Commerce, manage e-commerce, managed ecommerce, Online-Shopping, Web Commerce",
+				"FormattedName": "E-commerce",
+				"Evidence": "Others",
+				"LastUsed": "",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Follow Up",
+				"Ontology": "Management of Companies and Enterprises>Management Occupations>Following Up",
+				"Alias": "follow up, Follow-up, Followup",
+				"FormattedName": "Following Up",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "19/02/2021",
+				"ExperienceInMonths": 9
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Marketing",
+				"Ontology": "Management of Companies and Enterprises>Advertising, Marketing, Promotions, Public Relations, and Sales Managers>Marketing",
+				"Alias": "Marketing Process, Marketing Services, sales and marketing",
+				"FormattedName": "Marketing",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "31/12/2017",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Screening",
+				"Ontology": "Health Care and Social Assistance>Medical Assistants>Screening",
+				"Alias": "",
+				"FormattedName": "Screening",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "19/02/2021",
+				"ExperienceInMonths": 9
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Linkedin",
+				"Ontology": "",
+				"Alias": "",
+				"FormattedName": "",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "19/02/2021",
+				"ExperienceInMonths": 9
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Pipeline",
+				"Ontology": "Information>Software Developers and Programmers>Pipeline",
+				"Alias": "data pipeline, pipelines",
+				"FormattedName": "Pipeline",
+				"Evidence": "Others",
+				"LastUsed": "",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "MongoDB",
+				"Ontology": "Information>Database and Systems Administrators and Network Architects>MongoDB",
+				"Alias": "Mongo, Mongo DB, MongoDB 4.0, mongodb and db2, mongodb architecture, mongodb atlas, mongodb managed services, Mongodb Operations, mongodb software",
+				"FormattedName": "MongoDB",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "19/02/2021",
+				"ExperienceInMonths": 9
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Revenue",
+				"Ontology": "Finance and Insurance>Accountants and Auditors>Revenue",
+				"Alias": "",
+				"FormattedName": "Revenue",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "31/12/2017",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "SAP CRM",
+				"Ontology": "Management of Companies and Enterprises>Marketing and Sales Managers>SAP CRM",
+				"Alias": "Sap - Crm, sap crm 5.0, sap crm 7.0, Sap Crm Technical, Sap Customer Relationship Management, SAP Digital CRM, sap portal 6.0, sap-crm, SAPCRM",
+				"FormattedName": "SAP CRM",
+				"Evidence": "Others",
+				"LastUsed": "",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Tableau",
+				"Ontology": "Information>Data Processing, Hosting, and Related Services>Data Visualization Software>Tableau Software",
+				"Alias": "Data Visualization Software Tableau, software tableau, Tableau, Tableau Analytics, Tableau API, Tableau Architecture, Tableau Cloud, Tableau Dashboard, Tableau Data Visualization, Tableau Data Visualizations, Tableau Infrastructure, Tableau Reader, Tableau Reader 10.2, Tableau Reader 10.3, Tableau Reader 10.5., Tableau Reader Soft., Tableau Reader Software, Tableau Reporting Tool, Tableau Server, Tableau Visualizations",
+				"FormattedName": "Tableau Software",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "31/12/2017",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Docker",
+				"Ontology": "Information>All Other Information Services>Docker Software",
+				"Alias": "docker, Docker Soft., Docker Tool",
+				"FormattedName": "Docker Software",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "19/02/2021",
+				"ExperienceInMonths": 9
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Retail",
+				"Ontology": "Wholesale Trade>Supervisors of Sales and retail sales Workers>Retail",
+				"Alias": "retail industry",
+				"FormattedName": "Retail",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "31/03/2017",
+				"ExperienceInMonths": 24
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Server",
+				"Ontology": "Information>Computer Network Architects>Computer Server",
+				"Alias": "Computer Servers, Server",
+				"FormattedName": "Computer Server",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "19/02/2021",
+				"ExperienceInMonths": 9
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "CAPEX",
+				"Ontology": "Finance and Insurance>Fundraisers>Capital Expenditure Management",
+				"Alias": "CapEx, capex control, capital accounting, Capital Expenditure Mgmt., Capital Expenditure-Management, Capital Expenditures, capital expense Management, Capital-Expenditure Management, Managed Capital Expenditure, Managing Capex",
+				"FormattedName": "Capital Expenditure Management",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "31/03/2015",
+				"ExperienceInMonths": 31
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Rally",
+				"Ontology": "Information>All Other Information Services>Rally",
+				"Alias": "Rally Agile, Rally Application Lifecycle Management, Rally Software, Rally Test Management",
+				"FormattedName": "Rally",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "31/03/2017",
+				"ExperienceInMonths": 24
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "Sales",
+				"Ontology": "Wholesale Trade>Sales and Related Occupations>Sales Management",
+				"Alias": "corporate sales management, Export Sales Management, manage inside sales, manage sale, managing sales and marketing, online sales management, Sale Management, sale mgmt, SALES, Sales Administration, sales co-ordination, sales coordination, sales management skills, sales mgmt, Sales-Management",
+				"FormattedName": "Sales Management",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "31/03/2015",
+				"ExperienceInMonths": 62
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "REST",
+				"Ontology": "Information>Software Developers and Programmers>Representational State Transfer",
+				"Alias": "API REST, API Restful, Representational State-Transfer, Representational-State-Transfer, REST, rest api, rest webservices, restful, restful architecture, restful web service, restful webservices, restfull webservice, restservices",
+				"FormattedName": "Representational State Transfer",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "19/02/2021",
+				"ExperienceInMonths": 9
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "B2B",
+				"Ontology": "Finance and Insurance>Business Operations Specialists>Business To Business",
+				"Alias": "B2B, B2B Business Development, B2B Customer Service, B2B Management, B2B Marketing Strategy, B2B Operations, B2B Prospecting, B2B Sales Analytics, B2B Sales Management, B2B Selling, B2B Solution, B2B Technical Support, Business To Business B2B, Business-to-Business service",
+				"FormattedName": "Business To Business",
+				"Evidence": "Others",
+				"LastUsed": "",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "B2C",
+				"Ontology": "Wholesale Trade>Sales Representatives, Services>Business to Consumer",
+				"Alias": "B2C, B2C Business Model, B2C Ecommerce, B2C Sales, B2C Spectrum, B2C Technical Support, business-to-consumer",
+				"FormattedName": "Business to Consumer",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "31/12/2017",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "GTM",
+				"Ontology": "Finance and Insurance>Market Research Analysts and Marketing Specialists>Google Tag Manager",
+				"Alias": "Google Tag Manager Software, gtm",
+				"FormattedName": "Google Tag Manager",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "31/12/2017",
+				"ExperienceInMonths": 0
+			},
+			{
+				"Type": "OperationalSkill",
+				"Skill": "SAP",
+				"Ontology": "Finance and Insurance>Business and Financial Operations Occupations >SAP ERP",
+				"Alias": "applications sap, ERP SAP, program sap, sap, sap 4.6, sap 4.7, Sap 4.7 Enterprise, sap 4.7c, sap 5.0, sap 6.0, Sap Applications, SAP ECC6.0, SAP enterprise resource planning, SAP ERP software, sap module, Sap Program, SAP Software, Sap System, Sap Version 7.00, SAP2000",
+				"FormattedName": "SAP ERP",
+				"Evidence": "ExperienceSection",
+				"LastUsed": "31/12/2017",
+				"ExperienceInMonths": 0
+			}
+		],
+		"Experience": "7.2 years of experience in Sales & Operations in Energy (Oil & Gas) Retail sector \r \t\t  Expertise in Retail & Business Analytics, Sentiment Analysis, Business Development & Supply Chain. \r \t\t  Spearheaded cross-functional teams of 62 channel partners & 18 sales executives for sales & distribution in \r \t  diverse markets such as Gurgaon, Udaipur, Mumbai, Kochi \r \t\t  Headed 'Fuel Ecommerce' project - a first of its kind initiative by the Ministry of Petroleum & Natural Gas, India for \r \t  delivering fuel at door steps to B2B customers through Fuel Buddy Mobile App. \r \t\t  Handson experience of using CRM tools such Salesforce, SAP CRM & Google Analytics to create a pipeline.\r 07 years 02 months \r Co-Founder, Neural Day\t  Jun20 - Present \r \t\t  Working on a startup in the recruitment tech space by assisting recruiters through chatbot enabled screening \r \t  process and scheduling interviews using AI/ML models. \r \t\t  Created Ideal consumer profile & generated 20+ leads through influencers on Linkedin & social media channels. \r \t\t  Sales funnel analysis of inbound customers of organic search and indirect searches with rigorous follow up. \r \t\t  Deployed the complete model with REST APIs to MongoDB server & Google APIs in docker on GCP & AWS. \r Asst. Manager Sales & Analytics, Bharat Petroleum Corp Ltd, Gurgaon Apr17-Jan19 \r Sales \r \t\t  Managed P&L on a turnover of INR 1500 cr, 3rd highest in India, by leading a team of 60+ channel partners. \r \t\t  Increased market share by 1.1 % in MS/HSD and emerged as industry leader in FY 2018. \r \t\t  Increased the FMCG style lubricants packs business through retail channel (B2C) by 8% in FY 2017 \r \t\t  Evaluated investment of INR 30 Cr in Business development by analysing IRR / NPV of 20+ new retail outlets. \r \t\t  Forecasted monthly demand to align with stochastic future requirements based on historicals & market trend. \r \t\t  Data driven approach - Periodically analysed SAP and Tableau reports to take complex business decisions. \r Marketing \r \t\t  Developed Go to Market (GTM) strategy for branded fuels (SPEED / SPEED 97) relaunch in India and conducted \r \t  ATL / BTL promotional campaigns in segmented markets on social media & mass media. \r \t\t  Increased revenue by 3% by launching BPCL SBI co-branded credit card on select petrol pumps in Gurgaon. \r \t\t  Improved customer retention by 6% (~INR 90cr) by loyalty program (Smart fleet) for 2000+ bulk customers \r Asst. Manager Sales & Analytics, Bharat Petroleum Corp Ltd, Udaipur Apr15-Mar17 \r \t\t  Undertook additional responsibility of executing 20 new retail outlets construction projects in 18 months \r \t\t  Improved overall profit by 8% (~INR 5 crores annually) by launching branded fuels such as Speed / Speed 97 \r \t  o\t  Organized a superbike rally for launch; comprising 100 superbikes & 1500 participants; featured in \r \t  AutoCar India magazine \r Executive Sales & Engineering (Retail) , Bharat Petroleum Corp Ltd, Kochi & Udaipur Sep 12-Mar15 \r \t  Sales & Budgeting \r \t\t  Headed a team of 14 executives to manage 25 registered vendors and 10 Non registered vendors \r \t\t  Handled a budget of INR 65.6 crore in CAPEX- Highest in North India with special emphasis on return - IRR.",
+		"SegregatedExperience": [
+			{
+				"Employer": {
+					"EmployerName": "",
+					"FormattedName": "",
+					"ConfidenceScore": 0
+				},
+				"JobProfile": {
+					"Title": "Co-Founder",
+					"FormattedName": "Co-Founder",
+					"Alias": "c0-founder, co - founder, Co Founder, Co owner, co-owner, Events Company Cofounder, founder, founders, founding member, Project Co-Founder",
+					"RelatedSkills": [
+						{ "Skill": "Communication", "ProficiencyLevel": "Proficient" },
+						{ "Skill": "Brand Awareness", "ProficiencyLevel": "Proficient" },
+						{
+							"Skill": "Business Development Planning",
+							"ProficiencyLevel": "Proficient"
+						},
+						{ "Skill": "Revenue Generation", "ProficiencyLevel": "Moderate" },
+						{
+							"Skill": "Opportunity Assessment",
+							"ProficiencyLevel": "Proficient"
+						},
+						{ "Skill": "Marketing", "ProficiencyLevel": "Proficient" }
+					],
+					"ConfidenceScore": 10
+				},
+				"Location": {
+					"City": "",
+					"State": "",
+					"StateIsoCode": "",
+					"Country": "",
+					"CountryCode": { "IsoAlpha2": "", "IsoAlpha3": "", "UNCode": "" }
+				},
+				"JobPeriod": "Jun20 - till",
+				"FormattedJobPeriod": "06/2020 to till",
+				"StartDate": "01/06/2020",
+				"EndDate": "19/02/2021",
+				"IsCurrentEmployer": "true",
+				"JobDescription": "Working on a startup in the recruitment tech space by assisting recruiters through chatbot enabled screening \n \t process and scheduling interviews using AI/ML models. \n \t\t Created Ideal consumer profile & generated 20 leads through influencers on Linkedin & social media channels. \n \t\t Sales funnel analysis of inbound customers of organic search and indirect searches with rigorous follow up. \n \t\t Deployed the complete model with REST APIs to MongoDB server & Google APIs in docker on GCP & AWS.",
+				"Projects": [{ "UsedSkills": "", "ProjectName": "", "TeamSize": "" }]
+			},
+			{
+				"Employer": {
+					"EmployerName": "and Analytics, Bharat Petroleum Corp Ltd",
+					"FormattedName": "",
+					"ConfidenceScore": 10
+				},
+				"JobProfile": {
+					"Title": "Asst. Manager Sales",
+					"FormattedName": "",
+					"Alias": "",
+					"RelatedSkills": [],
+					"ConfidenceScore": 10
+				},
+				"Location": {
+					"City": "Gurgaon",
+					"State": "",
+					"StateIsoCode": "",
+					"Country": "",
+					"CountryCode": { "IsoAlpha2": "", "IsoAlpha3": "", "UNCode": "" }
+				},
+				"JobPeriod": "Apr17-Jan19",
+				"FormattedJobPeriod": "04/2017 to 01/2019",
+				"StartDate": "01/04/2017",
+				"EndDate": "31/01/2019",
+				"IsCurrentEmployer": "false",
+				"JobDescription": "Sales \n \t\t Managed P&L on a turnover of INR 1500 cr, 3rd highest in India, by leading a team of 60 channel partners.",
+				"Projects": [{ "UsedSkills": "", "ProjectName": "", "TeamSize": "" }]
+			},
+			{
+				"Employer": {
+					"EmployerName": "HSD",
+					"FormattedName": "",
+					"ConfidenceScore": 10
+				},
+				"JobProfile": {
+					"Title": "",
+					"FormattedName": "",
+					"Alias": "",
+					"RelatedSkills": [],
+					"ConfidenceScore": 0
+				},
+				"Location": {
+					"City": "",
+					"State": "",
+					"StateIsoCode": "",
+					"Country": "",
+					"CountryCode": { "IsoAlpha2": "", "IsoAlpha3": "", "UNCode": "" }
+				},
+				"JobPeriod": "2018 - 2017",
+				"FormattedJobPeriod": "2018 to 2017",
+				"StartDate": "01/01/2018",
+				"EndDate": "31/12/2017",
+				"IsCurrentEmployer": "false",
+				"JobDescription": "Increased the FMCG style lubricants packs business through retail channel B2C by 8% in FY \n \t\t Evaluated investment of INR 30 Cr in Business development by analysing IRR/NPV of 20 new retail outlets. \n \t\t Forecasted monthly demand to align with stochastic future requirements based on historicals & market trend. \n \t\t Data driven approach - Periodically analysed SAP and Tableau reports to take complex business decisions. \n Marketing \n \t\t Developed Go to Market GTM strategy for branded fuels SPEED/SPEED 97 relaunch in India and conducted \n \t ATL/BTL promotional campaigns in segmented markets on social media & mass media. \n \t\t Increased revenue by 3% by launching BPCL SBI co-branded credit card on select petrol pumps in Gurgaon \n Improved customer retention by 6% - INR 90cr by loyalty program Smart fleet for 2000 bulk customers",
+				"Projects": [{ "UsedSkills": "", "ProjectName": "", "TeamSize": "" }]
+			},
+			{
+				"Employer": {
+					"EmployerName": "and Analytics, Bharat Petroleum Corp Ltd",
+					"FormattedName": "",
+					"ConfidenceScore": 10
+				},
+				"JobProfile": {
+					"Title": "Asst. Manager Sales",
+					"FormattedName": "",
+					"Alias": "",
+					"RelatedSkills": [],
+					"ConfidenceScore": 10
+				},
+				"Location": {
+					"City": "Udaipur",
+					"State": "",
+					"StateIsoCode": "",
+					"Country": "",
+					"CountryCode": { "IsoAlpha2": "", "IsoAlpha3": "", "UNCode": "" }
+				},
+				"JobPeriod": "Apr15-Mar17",
+				"FormattedJobPeriod": "04/2015 to 03/2017",
+				"StartDate": "01/04/2015",
+				"EndDate": "31/03/2017",
+				"IsCurrentEmployer": "false",
+				"JobDescription": "Undertook additional responsibility of executing 20 new retail outlets construction projects in \n \t\t Improved overall profit by 8% - INR 5 crores annually by launching branded fuels such as Speed/Speed 97 \n \t o\t Organized a superbike rally for launch; comprising 100 superbikes & 1500 participants; featured in \n \t AutoCar India magazine",
+				"Projects": [{ "UsedSkills": "", "ProjectName": "", "TeamSize": "" }]
+			},
+			{
+				"Employer": {
+					"EmployerName": "Retail, Bharat Petroleum Corp Ltd",
+					"FormattedName": "",
+					"ConfidenceScore": 10
+				},
+				"JobProfile": {
+					"Title": "Executive Sales & Engineering",
+					"FormattedName": "Sales Executive",
+					"Alias": "Associate Sales Executive, Client Sales Executive, corporate sales executive, digital sales executive, distributor sales executive, enterprise sales executive, executive - sales, executive sales, executive-marketing sales, Executive-Project Sales, Executive-Sales, marketing sales executive, mid-market sales executive, online sales executive, part-time sales executive, retail sales executive, Sales Executive",
+					"RelatedSkills": [
+						{ "Skill": "Freshsales", "ProficiencyLevel": "Moderate" },
+						{
+							"Skill": "Commission Management Software",
+							"ProficiencyLevel": "Moderate"
+						},
+						{ "Skill": "Outbound Marketing", "ProficiencyLevel": "Proficient" },
+						{ "Skill": "Channel Sale", "ProficiencyLevel": "Moderate" },
+						{ "Skill": "Corporate Sales", "ProficiencyLevel": "Moderate" },
+						{ "Skill": "Sales Operations", "ProficiencyLevel": "Moderate" },
+						{ "Skill": "Inside Sales", "ProficiencyLevel": "Moderate" },
+						{ "Skill": "Sales Pipeline", "ProficiencyLevel": "Moderate" },
+						{ "Skill": "Sales Tracking", "ProficiencyLevel": "Proficient" },
+						{
+							"Skill": "Executive Positioning",
+							"ProficiencyLevel": "Moderate"
+						},
+						{ "Skill": "Sales Development", "ProficiencyLevel": "Moderate" },
+						{ "Skill": "Product Launch", "ProficiencyLevel": "Moderate" }
+					],
+					"ConfidenceScore": 10
+				},
+				"Location": {
+					"City": "Kochi",
+					"State": "Kerala",
+					"StateIsoCode": "IN-KL",
+					"Country": "India",
+					"CountryCode": {
+						"IsoAlpha2": "IN",
+						"IsoAlpha3": "IND",
+						"UNCode": "356"
+					}
+				},
+				"JobPeriod": "Sep 12-Mar15",
+				"FormattedJobPeriod": "09/2012 to 03/2015",
+				"StartDate": "01/09/2012",
+				"EndDate": "31/03/2015",
+				"IsCurrentEmployer": "false",
+				"JobDescription": "Sales & Budgeting \n \t\t Headed a team of 14 executives to manage 25 registered vendors and 10 Non registered vendors \n \t\t Handled a budget of INR 65.6 crore in CAPEX - Highest in North India with special emphasis on return - IRR.",
+				"Projects": [{ "UsedSkills": "", "ProjectName": "", "TeamSize": "" }]
+			}
+		],
+		"CurrentEmployer": "",
+		"JobProfile": "Co-Founder",
+		"WorkedPeriod": {
+			"TotalExperienceInMonths": "86",
+			"TotalExperienceInYear": "7.2",
+			"TotalExperienceRange": "5-8 YEAR"
+		},
+		"GapPeriod": "2/2019 To 5/2020",
+		"AverageStay": "21",
+		"LongestStay": "31",
+		"Summary": "",
+		"ExecutiveSummary": "Sahil has an experience in the domain of Management of Companies and Enterprises, particularly in Chief Executives. The candidate has a total experience of 7.2 Years",
+		"ManagementSummary": "Currently Sahil holds a High Management Level position, as Founder from 01/06/2020 to 19/2/2021. The candidate has a total experience of 0.9 years in this company.\n\nSahil holds a Mid Management Level position, as Manager Sales at and Analytics, Bharat Petroleum Corp Ltd. from 01/04/2017 to 31/1/2019. The candidate has a total experience of 1.10 years in this company.\n\nSahil holds a Mid Management Level position, as Manager Sales at and Analytics, Bharat Petroleum Corp Ltd. from 01/04/2015 to 31/3/2017. The candidate has a total experience of 2.0 years in this company.\n\n",
+		"Coverletter": "",
+		"Publication": "",
+		"SegregatedPublication": [],
+		"CurrentLocation": [],
+		"PreferredLocation": [],
+		"Availability": "",
+		"Hobbies": "",
+		"Objectives": "",
+		"Achievements": "Received Best Sales Officer award - All India in Branded Fuels category and Automation in the year 2016-17",
+		"SegregatedAchievement": [],
+		"References": "",
+		"CustomFields": "Parsing Time : 4862ms",
+		"EmailInfo": {
+			"EmailTo": " ",
+			"EmailBody": " ",
+			"EmailReplyTo": " ",
+			"EmailSignature": " ",
+			"EmailFrom": " ",
+			"EmailSubject": " ",
+			"EmailCC": " "
+		},
+		"Recommendations": [
+			{
+				"PersonName": "",
+				"CompanyName": "",
+				"Relation": "",
+				"PositionTitle": "",
+				"Description": ""
+			}
+		],
+		"DetailResume": "Sahil Madaan\n+91-8696907004\t  https://www.linkedin.com/in/sahilmadaan12/\n \nCAREER SUMMARY\n\t\t  7.2 years of experience in Sales & Operations in Energy (Oil & Gas) Retail sector\n\t\t  Expertise in Retail & Business Analytics, Sentiment Analysis, Business Development & Supply Chain.\n\t\t  Spearheaded cross-functional teams of 62 channel partners & 18 sales executives for sales & distribution in\n\t  diverse markets such as Gurgaon, Udaipur, Mumbai, Kochi\n\t\t  Headed 'Fuel Ecommerce' project - a first of its kind initiative by the Ministry of Petroleum & Natural Gas, India for\n\t  delivering fuel at door steps to B2B customers through Fuel Buddy Mobile App.\n\t\t  Handson experience of using CRM tools such Salesforce, SAP CRM & Google Analytics to create a pipeline.\nPROFESSIONAL EXPERIENCE \t 07 years 02 months\nCo-Founder, Neural Day\t  Jun20 - Present\n\t\t  Working on a startup in the recruitment tech space by assisting recruiters through chatbot enabled screening\n\t  process and scheduling interviews using AI/ML models.\n\t\t  Created Ideal consumer profile & generated 20+ leads through influencers on Linkedin & social media channels.\n\t\t  Sales funnel analysis of inbound customers of organic search and indirect searches with rigorous follow up.\n\t\t  Deployed the complete model with REST APIs to MongoDB server & Google APIs in docker on GCP & AWS.\nAsst. Manager Sales & Analytics, Bharat Petroleum Corp Ltd, Gurgaon Apr17-Jan19\nSales\n\t\t  Managed P&L on a turnover of INR 1500 cr, 3rd highest in India, by leading a team of 60+ channel partners.\n\t\t  Increased market share by 1.1 % in MS/HSD and emerged as industry leader in FY 2018.\n\t\t  Increased the FMCG style lubricants packs business through retail channel (B2C) by 8% in FY 2017\n\t\t  Evaluated investment of INR 30 Cr in Business development by analysing IRR/NPV of 20+ new retail outlets.\n\t\t  Forecasted monthly demand to align with stochastic future requirements based on historicals & market trend.\n\t\t  Data driven approach - Periodically analysed SAP and Tableau reports to take complex business decisions.\nMarketing\n\t\t  Developed Go-To-Market (GTM) strategy for branded fuels (SPEED/SPEED 97) relaunch in India and conducted\n\t  ATL/BTL promotional campaigns in segmented markets on social media & mass media.\n\t\t  Increased revenue by 3% by launching BPCL SBI co-branded credit card on select petrol pumps in Gurgaon.\n\t\t  Improved customer retention by 6% (~INR 90cr) by loyalty program (Smart fleet) for 2000+ bulk customers\nAsst. Manager Sales & Analytics, Bharat Petroleum Corp Ltd, Udaipur Apr15-Mar17\n\t\t  Undertook additional responsibility of executing 20 new retail outlets construction projects in 18 months\n\t\t  Improved overall profit by 8% (~INR 5 crores annually) by launching branded fuels such as Speed/Speed 97\n\t  o\t  Organized a superbike rally for launch; comprising 100 superbikes & 1500 participants; featured in\n\t  AutoCar India magazine\nExecutive Sales & Engineering (Retail) , Bharat Petroleum Corp Ltd, Kochi & Udaipur Sep 12-Mar15\n\t  Sales & Budgeting\n\t\t  Headed a team of 14 executives to manage 25 registered vendors and 10 Non registered vendors\n\t\t  Handled a budget of INR 65.6 crore in CAPEX- Highest in North India with special emphasis on return - IRR.\nEDUCATION\n\t\t  International Program in Management for Executives (1year full time MBA) 2019-20\n\t  Indian Institute of Management Lucknow, India CGPA 2.99/4\n\t\t  B. Tech, Mechanical Engineering \t 2008-12\n\t  Indian Institute of Technology (IIT) , Patna, CGPA 7.22/10\n\t\t  All India Rank 3528 (99.98 percentile) out of 5 Lakhs candidates in IIT-JEE 2008\nCertifications & Skills\n\t\t  Supply Chain Analytics by MIT; Marketing Analytics by UC Berkeley\n\t\t  Hands on experience of using Python, Tableau, R, SQL, Google Analytics, Advance Excel & PowerPoint\nAwards and Achievements\n\t\t  Received Best Sales Officer award - All India in Branded Fuels category and Automation in the year 2016-17\nExtra-Curricular\n\t\t  Represented Rajasthan state in BPCL inter SBUs badminton tournament in the year 2016\nEmail ID : sahilmadaan12@gmail.com\n \n \n \n \n \n \n \n \n \n \n\nAnnotations : \nhttps://www.linkedin.com/in/sahilmadaan12/",
+		"HtmlResume": "<html><body>Sahil Madaan<br/>+91-8696907004                                                                      <a href=\"$1\">$1</a><br/>                                    <br/>CAREER SUMMARY<br/>        7.2 years of experience in Sales & Operations in Energy (Oil & Gas) Retail sector<br/>        Expertise in Retail & Business Analytics, Sentiment Analysis, Business Development & Supply Chain.<br/>        Spearheaded cross-functional teams of 62 channel partners & 18 sales executives for sales & distribution in<br/>        diverse markets such as Gurgaon, Udaipur, Mumbai, Kochi<br/>        Headed 'Fuel Ecommerce' project - a first of its kind initiative by the Ministry of Petroleum & Natural Gas, India for<br/>        delivering fuel at door steps to B2B customers through Fuel Buddy Mobile App.<br/>        Handson experience of using CRM tools such Salesforce, SAP CRM & Google Analytics to create a pipeline.<br/>PROFESSIONAL EXPERIENCE                                                                                                        07 years 02 months<br/>Co-Founder, Neural Day                                                                                                  Jun'20 - Present<br/>        Working on a startup in the recruitment tech space by assisting recruiters through chatbot enabled screening<br/>        process and scheduling interviews using AI/ML models.<br/>        Created Ideal consumer profile & generated 20+ leads through influencers on Linkedin & social media channels.<br/>        Sales funnel analysis of inbound customers of organic search and indirect searches with rigorous follow up.<br/>        Deployed the complete model with REST APIs to MongoDB server & Google APIs in docker on GCP & AWS.<br/>Asst. Manager Sales & Analytics, Bharat Petroleum Corp Ltd, Gurgaon                                   Apr'17-Jan'19<br/>Sales<br/>        Managed P&L on a turnover of INR 1500 cr, 3rd highest in India, by leading a team of 60+ channel partners.<br/>        Increased market share by 1.1 % in MS/HSD and emerged as industry leader in FY 2018.<br/>        Increased the FMCG style lubricants packs business through retail channel (B2C) by 8% in FY 2017<br/>        Evaluated investment of INR 30 Cr in Business development by analysing IRR /NPV of 20+ new retail outlets.<br/>        Forecasted monthly demand to align with stochastic future requirements based on historicals & market trend.<br/>        Data driven approach - Periodically analysed SAP and Tableau reports to take complex business decisions.<br/>Marketing<br/>        Developed Go-To-Market (GTM) strategy for branded fuels (SPEED/SPEED 97) relaunch in India and conducted<br/>        ATL/BTL promotional campaigns in segmented markets on social media & mass media.<br/>        Increased revenue by 3% by launching BPCL SBI co-branded credit card on select petrol pumps in Gurgaon.<br/>        Improved customer retention by 6% (~INR 90cr) by loyalty program (Smart fleet) for 2000+ bulk customers<br/>Asst. Manager Sales & Analytics, Bharat Petroleum Corp Ltd, Udaipur                                Apr'15-Mar'17<br/>        Undertook additional responsibility of executing 20 new retail outlets construction projects in 18 months<br/>        Improved overall profit by 8% (~INR 5 crores annually) by launching branded fuels such as Speed/Speed 97<br/>   o       Organized a superbike rally for launch; comprising 100 superbikes & 1500 participants; featured in<br/>                    AutoCar India magazine<br/>Executive Sales & Engineering (Retail) , Bharat Petroleum Corp Ltd, Kochi & Udaipur            Sep '12-Mar'15<br/>       Sales & Budgeting<br/>        Headed a team of 14 executives to manage 25 registered vendors and 10 Non registered vendors<br/>        Handled a budget of INR 65.6 crore in CAPEX- Highest in North India with special emphasis on return - IRR.<br/>EDUCATION<br/>        International Program in Management for Executives (1year full time MBA)                                         2019-20<br/>        Indian Institute of Management Lucknow, India    CGPA 2.99/4<br/>        B. Tech, Mechanical Engineering                                                                                                       2008-12<br/>        Indian Institute of Technology (IIT) , Patna, CGPA 7.22/10<br/>        All India Rank 3528 (99.98 percentile) out of 5 Lakhs candidates in IIT-JEE 2008<br/>Certifications & Skills<br/>        Supply Chain Analytics by MIT; Marketing Analytics by UC Berkeley<br/>        Hands on experience of using Python, Tableau, R, SQL, Google Analytics, Advance Excel & PowerPoint<br/>Awards and Achievements<br/>        Received Best Sales Officer award - All India in Branded Fuels category and Automation in the year 2016-17<br/>Extra-Curricular<br/>        Represented Rajasthan state in BPCL inter SBUs badminton tournament in the year 2016<br/><br/>Email ID: sahilmadaan12@gmail.com</body></html>",
+		"CandidateImage": { "CandidateImageData": "", "CandidateImageFormat": "" },
+		"TemplateOutput": {
+			"TemplateOutputFileName": "",
+			"TemplateOutputData": ""
+		},
+		"ApiInfo": {
+			"Metered": "No",
+			"CreditLeft": "3",
+			"AccountExpiryDate": "04/03/2021 18:00:27.0",
+			"BuildVersion": "8.0.0.2021.02.16"
+		}
+	}
+}

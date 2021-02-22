@@ -74,6 +74,12 @@ const candidateSchema = mongoose.Schema({
 	postingTitle: {
 		type: String,
 		required: true
+	},
+	education: [Object],
+	experience: [Object],
+	visible: {
+		type: Boolean,
+		default: true
 	}
 });
 
