@@ -18,7 +18,6 @@ exports.getJobs = async (req, res) => {
 				return { ...job._doc, candidateCount: candidateCount.length };
 			})
 		);
-		console.log(newJobs);
 
 		res.status(200).json({
 			status: "success",
