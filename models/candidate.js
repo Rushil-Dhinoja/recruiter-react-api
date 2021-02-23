@@ -1,25 +1,25 @@
 /** @format */
 
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const responseSchema = mongoose.Schema({
 	response: String,
-	score: String
+	score: String,
 });
 
 const candidateSchema = mongoose.Schema({
 	name: {
 		type: String,
-		required: true
+		required: true,
 	},
 	email: {
 		type: String,
-		unique: true
+		unique: true,
 	},
 	phone: {
 		type: String,
 		required: true,
-		unique: true
+		unique: true,
 	},
 	dob: Date,
 	currentPosition: String,
@@ -29,16 +29,16 @@ const candidateSchema = mongoose.Schema({
 	avatar: String, //Profile Image or DP: Provide a link to pic
 	score: {
 		type: Number,
-		default: () => Math.floor(Math.random() * 100 + 1)
+		default: () => Math.floor(Math.random() * 100 + 1),
 	},
 	notes: String,
 	jobId: {
 		type: mongoose.Schema.ObjectId,
-		ref: "Job"
+		ref: 'Job',
 		// required: [true, "Job Id is required"]
 	},
 	departmentId: {
-		type: String
+		type: String,
 	},
 	date: String,
 	time: String,
@@ -49,38 +49,38 @@ const candidateSchema = mongoose.Schema({
 	sessionid: String,
 	chatType: {
 		type: String,
-		enum: ["outbound", "inbound"],
-		default: "inbound"
+		enum: ['outbound', 'inbound'],
+		default: 'inbound',
 	},
 	chatState: {
 		type: String,
-		enum: ["active", "inactive", "completed"],
-		default: "active"
+		enum: ['active', 'inactive', 'completed'],
+		default: 'active',
 	},
 	uid: {
 		type: String,
-		default: () => Math.floor(1000000 + Math.random() * 9000000)
+		default: () => Math.floor(1000000 + Math.random() * 9000000),
 	},
 	action: {
-		type: String
+		type: String,
 	},
 	skills: {
-		type: String
+		type: String,
 	},
 	response: {
 		type: [responseSchema],
-		required: true
+		required: true,
 	},
 	postingTitle: {
 		type: String,
-		required: true
+		required: true,
 	},
-	education: [Object],
-	experience: [Object],
+	educations: [Object],
+	experiences: [Object],
 	visible: {
 		type: Boolean,
-		default: true
-	}
+		default: true,
+	},
 });
 
-module.exports = mongoose.model("Candidate", candidateSchema);
+module.exports = mongoose.model('Candidate', candidateSchema);
