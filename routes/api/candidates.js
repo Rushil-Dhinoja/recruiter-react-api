@@ -1,27 +1,27 @@
 /** @format */
-const https = require("https");
-const fs = require("fs");
-const download = require("download");
-const express = require("express");
+const https = require('https');
+const fs = require('fs');
+const download = require('download');
+const express = require('express');
 const router = express.Router();
-const multer = require("multer");
-const AWS = require("aws-sdk");
+const multer = require('multer');
+const AWS = require('aws-sdk');
 
 const storage = multer.diskStorage({
 	destination: function (req, file, cb) {
-		cb(null, "./uploads/");
+		cb(null, './uploads/');
 	},
 	filename: function (req, file, cb) {
 		cb(null, new Date().toISOString() + file.originalname);
-	}
+	},
 });
 
 const fileFilter = (req, file, cb) => {
 	if (
-		file.mimetype === "application/pdf" ||
-		file.mimetype === "application/msword" ||
+		file.mimetype === 'application/pdf' ||
+		file.mimetype === 'application/msword' ||
 		file.mimetype ===
-			"application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+			'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 	) {
 		cb(null, true);
 	} else {
@@ -30,103 +30,103 @@ const fileFilter = (req, file, cb) => {
 };
 const upload = multer({
 	storage: storage,
-	limits: { fileSize: 1024 * 1024 * 5 }
+	limits: { fileSize: 1024 * 1024 * 5 },
 });
 
-const Candidate = require("../../models/candidate");
-const Vacancy = require("../../models/vacancy");
+const Candidate = require('../../models/candidate');
+const Vacancy = require('../../models/vacancy');
 
 //Get Candidates
-router.get("/", (req, res) => {
-	Object.keys(req.query).forEach(key => {
+router.get('/', (req, res) => {
+	Object.keys(req.query).forEach((key) => {
 		try {
 			req.query[key] = JSON.parse(req.query[key]);
 		} catch (SyntaxError) {}
 	});
-	console.log("api");
+	console.log('api');
 	Candidate.find(req.query)
-		.select("-__v")
-		.populate("jobId")
+		.select('-__v')
+		.populate('jobId')
 		.exec()
-		.then(data => {
+		.then((data) => {
 			res.status(200).json(data);
 		})
-		.catch(err => {
+		.catch((err) => {
 			res.status(500).json({ error: err.message });
 		});
 });
 
 // Get Candidates based on job id
-router.get("/job/:postingTitle", async (req, res) => {
+router.get('/job/:postingTitle', async (req, res) => {
 	try {
 		const candidates = await Candidate.find({
-			jobId: req.params.postingTitle
+			jobId: req.params.postingTitle,
 		});
 		res.status(200).json({
-			status: "Success",
+			status: 'Success',
 			results: candidates.length,
-			data: { data: candidates }
+			data: { data: candidates },
 		});
 	} catch (error) {
 		res.status(404).json({
-			status: "Failed"
+			status: 'Failed',
 		});
 	}
 });
 
-router.get("/unassigned", async (req, res) => {
+router.get('/unassigned', async (req, res) => {
 	try {
 		const candidates = await Candidate.find({
-			jobId: { $exists: false }
+			jobId: { s: false },
 		});
 
 		res.status(200).json({
-			status: "Success",
+			status: 'Success',
 			result: candidates.length,
-			data: { data: candidates }
+			data: { data: candidates },
 		});
 	} catch (error) {
 		res.status(404).json({
-			status: "Failed"
+			status: 'Failed',
 		});
 	}
 });
 
-router.get("/action/:action", async (req, res) => {
+router.get('/action/:action', async (req, res) => {
 	try {
 		if (
-			req.params.action === "Schedule" ||
-			req.params.action === "Disqualify" ||
-			req.params.action === "Shortlist" ||
-			req.params.action === "Assess Further" ||
-			req.params.action === "Future Reference" ||
-			req.params.action === "Schedule Later"
+			req.params.action === 'Schedule' ||
+			req.params.action === 'Disqualify' ||
+			req.params.action === 'Shortlist' ||
+			req.params.action === 'Assess Further' ||
+			req.params.action === 'Future Reference' ||
+			req.params.action === 'Schedule Later'
 		) {
 			const candidates = await Candidate.find({
-				action: req.params.action
-			}).populate({ path: "jobId", populate: { path: "postingTitle" } });
+				action: req.params.action,
+			}).populate({ path: 'jobId', populate: { path: 'postingTitle' } });
 
 			res.status(200).json({
-				status: "Success",
+				status: 'Success',
 				result: candidates.length,
-				data: { data: candidates }
+				data: { data: candidates },
 			});
 		} else {
 			res.status(400).json({
-				status: "Failed",
+				status: 'Failed',
 				msg:
-					"Please send a valid action which is [Schedule, Disqualify, Shortlist, Assess Further, Future Reference]"
+					'Please send a valid action which is [Schedule, Disqualify, Shortlist, Assess Further, Future Reference]',
 			});
 		}
 	} catch (error) {
 		res.status(404).json({
-			status: "Failed"
+			status: 'Failed',
 		});
 	}
 });
 
 //Add a Candidate
-router.post("/", (req, res) => {
+router.post('/', (req, res) => {
 	// if (req.body.jobId) {
 	// 	const applyingVacancies = req.body.jobId;
 	// 	const update = { $inc: { applicationReceived: 1 } };
@@ -165,76 +165,79 @@ router.post("/", (req, res) => {
 	const candidate = new Candidate(req.body);
 	candidate
 		.save()
-		.then(result => {
+		.then((result) => {
 			res.status(201).json({ createdCandidate: result });
 		})
-		.catch(err => {
+		.catch((err) => {
 			res.status(500).json({ error: err.message });
 		});
 	// }
 });
 
 //add multiple candidiate
-router.post("/multiple", async (req, res) => {
+router.post('/multiple', async (req, res) => {
 	try {
 		const candidates = await Candidate.insertMany(req.body);
 		res.status(201).json({
-			status: "Success",
+			status: 'Success',
 			data: {
-				data: candidates
-			}
+				data: candidates,
+			},
 		});
 	} catch (error) {
 		res.status(400).json({
-			status: "Failed",
+			status: 'Failed',
 			error: {
-				message: error.message
-			}
+				message: error.message,
+			},
 		});
 	}
 });
 
 //get a candidate
 
-router.get("/not-visible", async (req, res ) => {
+router.get('/not-visible', async (req, res) => {
 	try {
-		const candidates = await Candidate.find({visible: false})
+		const candidates = await Candidate.find({
+			visible: false,
+			action: { $exists: false },
+		});
 		res.status(201).json({
-			status: "Success",
-			data:{
-				data: candidates
-			}
-		})
+			status: 'Success',
+			count: candidates.length,
+			data: {
+				data: candidates,
+			},
+		});
 	} catch (error) {
 		res.status(400).json({
-			status: "Failed",
+			status: 'Failed',
 			error: {
-				message: error.message
-			}
-		})
-		
+				message: error.message,
+			},
+		});
 	}
-})
+});
 
-router.get("/:candidateId", (req, res) => {
+router.get('/:candidateId', (req, res) => {
 	const id = req.params.candidateId;
 	Candidate.findById(id)
-		.select("-__v")
-		.populate("jobId")
+		.select('-__v')
+		.populate('jobId')
 		.exec()
-		.then(data => {
+		.then((data) => {
 			if (data) {
 				res.status(200).json(data);
 			} else {
-				res.status(404).json({ Message: id + " Not Found" });
+				res.status(404).json({ Message: id + ' Not Found' });
 			}
 		})
-		.catch(err => {
-			res.status(500).json({ error: "Malformed Request" });
+		.catch((err) => {
+			res.status(500).json({ error: 'Malformed Request' });
 		});
 });
 
-router.patch("/cv/:uid", async (req, res) => {
+router.patch('/cv/:uid', async (req, res) => {
 	try {
 		if (req.body.url) {
 			const data = await download(req.body.url);
@@ -243,14 +246,14 @@ router.patch("/cv/:uid", async (req, res) => {
 			// 	console.log(err);
 			// });
 			const S3 = new AWS.S3({
-				accessKeyId: "AKIAT3GXKBEL6WSS2PUG",
-				secretAccessKey: "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"
+				accessKeyId: 'AKIAT3GXKBEL6WSS2PUG',
+				secretAccessKey: '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',
 			});
 
 			const params = {
-				Bucket: "recruiter-bucket",
+				Bucket: 'recruiter-bucket',
 				Key: `${req.params.uid}${Date.now()}.pdf`,
-				Body: data
+				Body: data,
 			};
 
 			const dataS3 = await S3.upload(params).promise();
@@ -262,26 +265,26 @@ router.patch("/cv/:uid", async (req, res) => {
 			);
 
 			res.json({
-				status: "Uploaded",
-				data: updatedCandidate
+				status: 'Uploaded',
+				data: updatedCandidate,
 			});
 		} else {
 			res.json({
-				status: "Failed",
-				message: "Url is required in request body"
+				status: 'Failed',
+				message: 'Url is required in request body',
 			});
 		}
 	} catch (error) {
 		res.json({
-			status: "done",
-			error: error
+			status: 'done',
+			error: error,
 		});
 	}
 });
 
 //update a candidate
 
-router.patch("/:candidateId", upload.single("resume"), (req, res) => {
+router.patch('/:candidateId', upload.single('resume'), (req, res) => {
 	if (req.file) {
 		req.body.resume = req.file.path;
 	}
@@ -340,12 +343,12 @@ router.patch("/:candidateId", upload.single("resume"), (req, res) => {
 	// 		});
 	// } else {
 	Candidate.findByIdAndUpdate(id, req.body, { new: true })
-		.populate({ path: "jobId", populate: { path: "postingTitle" } })
+		.populate({ path: 'jobId', populate: { path: 'postingTitle' } })
 		.exec() // in cases where jobids were not mentioned
-		.then(result => {
+		.then((result) => {
 			res.status(201).json({ updatedCandidate: result });
 		})
-		.catch(err => {
+		.catch((err) => {
 			res.status(500).json({ error: err });
 		});
 	// }
@@ -353,20 +356,20 @@ router.patch("/:candidateId", upload.single("resume"), (req, res) => {
 
 //delete a candidate
 
-router.delete("/:candidateId", async (req, res, next) => {
+router.delete('/:candidateId', async (req, res, next) => {
 	try {
 		const id = req.params.candidateId;
 		await Candidate.findByIdAndDelete(id);
 		res.status(204).json({
-			status: "success",
-			data: null
+			status: 'success',
+			data: null,
 		});
 	} catch (error) {
 		res.status(400).json({
-			status: "Fail",
+			status: 'Fail',
 			error: {
-				message: error.message
-			}
+				message: error.message,
+			},
 		});
 	}
 	// const update = { $inc: { applicationReceived: -1 } };
