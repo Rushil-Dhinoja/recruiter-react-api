@@ -81,6 +81,8 @@ const candidateSchema = mongoose.Schema({
 		type: Boolean,
 		default: true,
 	},
+	location: String,
+	linkedin: String,
 });
 
 module.exports = mongoose.model('Candidate', candidateSchema);
